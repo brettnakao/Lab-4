@@ -8,6 +8,7 @@ Created on Sat Mar  2 18:02:34 2024
 
 import numpy as np
 
+# Constants
 print("initial velocity:")
 vo=float(input())
 
@@ -16,8 +17,10 @@ theta=float(input())*np.pi/180
 
 g = 9.81
 
+# Time intervals (s)
 time_intervals = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
+# Calculate positions
 for i in range(len(time_intervals)):
     print(i)
     x = vo*float(np.cos(theta))*i

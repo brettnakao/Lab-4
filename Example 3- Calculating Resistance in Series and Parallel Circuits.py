@@ -8,9 +8,11 @@ Created on Sat Mar  2 18:25:24 2024
 
 import numpy as np
 
+# Arrays for resistance
 resistor_series = np.array([3, 4, 6])
 resistors_parallel = np.array([9, 5, 3])
 
+# Calculate total resistance
 for i in range(len(resistor_series)):
     resistance_values = resistor_series[i]
     print(resistance_values)
@@ -20,5 +22,6 @@ for i in range(len(resistors_parallel)):
         inverse_series = np.array(1/(resistance_values))
         print(resistance_values)
 
+# Print ans
 print(f"total resistance series: {resistor_series.sum()} ohms")
 print(f"total resistance parallel: {np.sum(1/resistors_parallel)} ohms")
